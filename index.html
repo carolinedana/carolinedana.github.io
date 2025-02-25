@@ -14,12 +14,17 @@
         h1 {
             text-align: center;
         }
-        .code-container {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+       .code-container {
             background: #fff;
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
         }
         pre {
             background: #eee;
@@ -27,25 +32,48 @@
             border-radius: 5px;
             overflow-x: auto;
         }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>PHY/MAT 131 Coding Projects</h1>
     <p>Welcome to my coding showcase for PHY 131! Below are some of the coding projects I've worked on so far.</p>
     
-    <div class="code-container">
-        <h2>Project 2: Driving the Turtle</h2>
-        <pre><code>This assignment was the first time I ever used the turtle module in Python. I had a lot of fun learning how to draw with it!  
-        </code></pre>
-        <p><a href="https://trinket.io/python/6ea2034952cd" target="_blank">View Full Project</a></p>
+    <div class="container">
+        <div class="code-container">
+            <h2>Project 2: Driving the Turtle</h2>
+            <pre><code>This assignment was the first time I ever used the turtle module in Python. I had a lot of fun learning how to draw with it!</code></pre>
+            <p><a href="https://trinket.io/python/6ea2034952cd" target="_blank">View Full Project</a></p>
+        </div>
+        <div class="code-container">
+            <h2>Project 3: How many handshakes?</h2>
+            <pre><code>here i need to come up with a description lol</code></pre>
+            <p><a href="https://trinket.io/python/307ecab46596" target="_blank">View Full Project</a></p>
+        </div>
+        <div class="code-container">
+            <h2>Project 4: Drawing a Circle</h2>
+            <pre><code>I need to add another description here</code></pre>
+            <p><a href="https://trinket.io/python/6a1caead1e52" target="_blank">View Full Project</a></p>
+        </div>
+        <div class="code-container">
+            <h2>Project 5: Generating a New ASC Password</h2>
+            <pre><code>description needed here</code></pre>
+            <p><a href="https://trinket.io/python/03b14d58ce67" target="_blank">View Full Project</a></p> 
+        </div>
+        <div class="code-container">
+            <h2>Project 6: Computing Statistics with Kiva Data</h2>
+            <pre><code>description needed here again lol</code></pre>
+            <p><a href="https://trinket.io/python/68e7ca8a4d72" target="_blank">View Full Project</a></p>
+        </div>
     </div>
-    
-    <div class="code-container">
-        <h2>Project 2: Another Example</h2>
-        <pre><code>def velocity(distance, time):
-        return distance / time
-
-print(velocity(100, 5))</code></pre>
-</div>
 </body>
 </html>
